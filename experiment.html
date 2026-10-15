@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Experiment</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<ul class="topnav">
+<li><a href="about.html">About</a></li>
+<li><a href="work.html">Work</a></li>
+<li><a href="toolkit.html">Tool</a></li>
+<li><a class="active" href= "experiment.html">Experiment</a></li>
+	</ul>	
+	
+</head>
+
+<body>
+
+	<section class= "Experiments"></section>
+<div class= "example">
+	<h1>EXPERIMENTS</h1>
+	<h2>EXAMPLE</h2>
+  <h3>CURVED TEXT AND SHAPE</h3>
+	<svg width="400" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+		
+  <!-- to hide the path, it is usually wrapped in a <defs> element -->
+  <!-- <defs> -->
+  <path
+    id="MyPath"
+    fill="none"
+    stroke="red"
+    d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50" />
+  <!-- </defs> -->
+
+  <text>
+    <textpath href="#MyPath">Quick brown fox jums over the lazy dog.</textpath>
+  </text>
+</svg>
+	</div>
+	
+<section class= "Shapes"></section>
+	<div class= "circle">
+		<h2>CIRCLE SHAPE</h2>
+
+<svg width= "400" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path
+        id="mypath"
+        fill="none"
+        stroke="red"
+        d="M 10,50 A 40,40 0 1,1 90,50 A 40,40 0 1,1 10,50"/>
+	<text>
+        <textpath href="#mypath" startOffset="0%">
+            Look at me, I'm a circle but in text.
+        </textpath>
+    </text>
+</svg>
+	</div>
+
+
+	
+	
+<div class= "rectangle">	
+<h2>RECTANGLE SHAPE</h2>
+
+<svg width= "1000" viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg">
+  
+
+<path id="rectanglepath"
+      d="M 25,30 H 475 V 190 H 25 Z"
+      fill="none"
+      stroke="red"
+      stroke-width="5" />
+
+<a href="about.html">
+		<text>
+        <textpath href="#rectanglepath"
+                  startOffset="2%">
+            ABOUT 
+        </textpath>
+    </text>
+</a>
+
+<a href="Experiments.html">
+    <text>
+        <textpath href="#rectanglepath"
+                  startOffset="27%">
+             EXPERIMENT
+        </textpath>
+    </text>
+</a>
+
+<a href="work.html">
+    <text>
+        <textpath href="#rectanglepath" startOffset="50%">
+            MY WORK 
+        </textpath>
+    </text>
+</a>
+
+<a href="toolkit.html">
+    <text>
+        <textpath href="#rectanglepath" startOffset="79%">
+            TOOLKIT 
+        </textpath>
+    </text>
+</a>
+
+</svg>
+
+        
+<section class="references">
+    <h2>References</h2>
+    <ul>
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/textPath" target="MDN">
+                MDN Web Docs  SVG textPath
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.w3schools.com/css/css3_text_effects.asp" target="W3">
+                W3Schools  CSS Text Effects
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.w3schools.com/html/html5_svg.asp" target="W3">
+                W3Schools  HTML SVG
+            </a>
+        </li>
+    </ul>
+</section>
+
+	</div>
+</body>
+</html>
